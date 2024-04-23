@@ -6,7 +6,7 @@ test-repo-j9uii description
 * Java 11+ is installed.
 * Apache Maven 3.8.6 or later is installed.
 * [Quarkus CLI](https://quarkus.io/guides/cli-tooling) or [Knative Workflow CLI](https://kiegroup.github.io/kogito-docs/serverlessworkflow/latest/testing-and-troubleshooting/kn-plugin-workflow-overview.html) 0.21.3 or later is installed.
-* (Optional) Docker is installed.
+* () Docker is installed.
 * (Optional) Podman is installed.
 * (Optional) Kubernetes CLI is installed.
 * Visual Studio Code with [Red Hat Java Extension](https://marketplace.visualstudio.com/items?itemName=redhat.java) and 
