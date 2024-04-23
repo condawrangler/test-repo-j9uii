@@ -1,0 +1,12 @@
+{
+  "$id": "classpath:/schemas/test-repo-j9uii-schema.json",
+  "title": "test-repo-j9uii: Data Input Schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "test-repo-j9uii__sub_schema__sample_data.json": {
+      "$ref": "test-repo-j9uii__sub_schema__sample_section.json",
+      "type": "object"
+    }
+  }
+}

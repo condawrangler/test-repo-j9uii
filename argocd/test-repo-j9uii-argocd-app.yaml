@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-repo-j9uii-gitops
+  namespace: orchestrator-gitops
+  labels:
+    app-type: workflow
+    app: test-repo-j9uii
+spec:
+  destination:
+    namespace: sonataflow-infra
+    server: https://kubernetes.default.svc
+  project: orchestrator-gitops
+  source:
+    path: ./kustomize/base
+    repoURL: git@github.com:condawrangler/test-repo-j9uii-gitops.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-repo-j9uii
+  description: test-repo-j9uii description
+  annotations:
+    backstage.io/kubernetes-namespace: orchestrator-gitops
+    backstage.io/kubernetes-id: test-repo-j9uii-ci
+    janus-idp.io/tekton: test-repo-j9uii
+    github.com/project-slug: condawrangler/test-repo-j9uii
+spec:
+  type: workflow-project
+  system: system:default/janus-orchestrator
+  lifecycle: development
+  owner: user:default/condawrangler
